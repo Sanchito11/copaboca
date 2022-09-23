@@ -1,0 +1,136 @@
+    @media only screen and (max-width:550px){
+    body {
+        background-image: url("fondo3.jpg");
+      }
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+      section.derecha{
+        text-align: center;
+      }
+      section.ppal{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: left;
+      }
+      section.ppal>form{
+        color:green;
+      }
+      footer{
+        text-align: left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    }
+    @media only screen and (min-width:551px) and (max-width:1000px){
+      body {
+        display:grid;
+        grid-template-areas:
+          'header header header'
+          'right right right'
+          'main main main'
+          'footer footer footer';
+        background-image:url("fondo2.jpg");
+        }
+        header {
+          grid-area:header;
+          justify-content: center;
+          text-align: center;
+        }
+        section.derecha{
+          grid-area:right;
+          color:white;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        section.ppal{
+          grid-area: main;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        section.ppal>form{
+          color:green;
+        }
+        footer{
+          grid-area:footer;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }       
+    }
+    @media only screen and (min-width:1001px) and (max-width:1200px){
+      body {
+        display:grid;
+        grid-template-areas:
+          'header header header'
+          'main main right'
+          'footer footer right';
+        background-image:url("fondo2.jpg");
+        }
+        
+        header {
+          grid-area:header;
+          justify-content: center;
+          text-align: center;
+        }
+        section.derecha{
+          grid-area:right;
+          text-align: center;
+          justify-content: center;
+          font-family: fantasy;
+          color:white;
+        }
+        section.ppal{
+          grid-area: main;
+          text-align: center;
+          justify-content: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        section.ppal>form{
+          color:green;
+        }
+        section.ppal>picture.img:hover{
+          opacity: 5.0;
+        }
+        footer{
+          grid-area:footer;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }       
+    }
+    @media only screen and (min-width:1201px){
+    body {
+    display:grid;
+    grid-template-areas:
+      'header header header'
+      'main main right'
+      'footer footer right';
+    background-image: url("fondo2.jpg");
+  }
+    header {
+      grid-area:header;
+      justify-content: center;
+      text-align: center;
+    }
+    section.derecha{
+      grid-area:right;
+      text-align: center;
+      justify-content: center;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:black;
+    }
+    section.ppal{
+      grid-area: main;
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    section.ppal>form{
+      color:green;
+    }
+    section.ppal>picture.img:hover{
+      opacity: 5.0;
+    }
+    footer{
+      grid-area:footer;
+      text-align:center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  }
